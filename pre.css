@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Poppins:wght@400;600;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+  }
+  .loader{
+    position: fixed;
+    top: -8em;
+    left: 0;
+    background: #5c66ad;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .loader img{
+    width: 11rem;
+    height: 10rem;
+  }
+  .loader h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+
+    background: linear-gradient(40deg,#8BE8E5,#4477CE);
+    text-shadow: none;
+    -webkit-text-fill-color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  .disppear{
+    animation: vanish 1s forwards;
+  }
+  @keyframes vanish {
+    100%{
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+@media(max-width: 700px){
+  .loader h3{
+    font-size: 1rem;
+    margin-left: 2.5em;
+    width: 15em;
+  }
+}
+
+/**/
