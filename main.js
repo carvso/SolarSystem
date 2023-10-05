@@ -6,10 +6,9 @@ import './style.css'
 
 import * as THREE from 'three'
 import MouseMeshInteraction from './three_mmi'
-
-import {OrbitControls} from 'three/examples/jsm/controls/OrbitCOntrols';
+import {OrbitControls} from 'https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitCOntrols';
 import { TWEEN } from 'https://unpkg.com/three@0.139.0/examples/jsm/libs/tween.module.min.js';
-import {GLTFLoader} from 'three/examples/jsm/loaders/GLTFLoader';
+import {GLTFLoader} from 'https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader';
  
 var selectedPiece = false;
 var title;
