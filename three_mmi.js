@@ -1,4 +1,4 @@
-import * as THREE from 'three'
+import * as THREE from 'https://unpkg.com/three@0.139.0'
 
 class MouseMeshInteractionHandler {
 	constructor(mesh_name, handler_function) {
