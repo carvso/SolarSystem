@@ -4,7 +4,7 @@
 //import './style.css'
 
 import * as THREE from 'three'
-import MouseMeshInteraction from './three_mmi'
+import MouseMeshInteraction from './three_mmi.js'
 
 import {OrbitControls} from 'three/addons/controls/OrbitControls';
 import { TWEEN } from 'https://unpkg.com/three@0.139.0/examples/jsm/libs/tween.module.min.js';
