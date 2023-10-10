@@ -1,7 +1,7 @@
 //per cambiare la rotazione di ogni pianeta aggiungiamo un obj centrale
 //per fare in modo che il pianeta figlio segua la rotazione dell'obj centrale
 
-import './style.css'
+//import './style.css'
 
 import * as THREE from 'three'
 import MouseMeshInteraction from './three_mmi'
