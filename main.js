@@ -58,8 +58,8 @@ scene.background = spaceTexture
 renderer.render(scene, camera);
 
 //inizio sole (commit crea un sole utilizzando shaders)
-const sunTexture = new THREE.TextureLoader().load('/src/texture_plans/sun.jpg');
-const sunNormalText = new THREE.TextureLoader().load('/src/texture_plans/sun_normal.jpg');
+const sunTexture = new THREE.TextureLoader().load('./src/texture_plans/sun.jpg');
+const sunNormalText = new THREE.TextureLoader().load('./src/texture_plans/sun_normal.jpg');
 
 const sun = new THREE.Mesh(
   new THREE.SphereGeometry(25, 32, 32),
@@ -95,7 +95,7 @@ function createSphereMesh(texturePath, normalMapPath, radius, segments) {
   return mesh;
 }
 //mercurio
-const mercury = createSphereMesh('/src/texture_plans/mercury.jpg','/src/texture_plans/mercury_normal.jpg',1.9,32);
+const mercury = createSphereMesh('./src/texture_plans/mercury.jpg','./src/texture_plans/mercury_normal.jpg',1.9,32);
 const mercuryObj = new THREE.Object3D();
 mercuryObj.add(mercury);
 scene.add(mercuryObj);
@@ -103,7 +103,7 @@ mercury.name = 'mercurio';
 mercury.position.setX(30);
 
 //venere
-const venus = createSphereMesh('/src/texture_plans/venus.jpg', '/src/texture_plans/normal_venus.jpg', 4.75, 32);
+const venus = createSphereMesh('./src/texture_plans/venus.jpg', './src/texture_plans/normal_venus.jpg', 4.75, 32);
 const venusObj = new THREE.Object3D();
 venusObj.add(venus);
 scene.add(venusObj);
@@ -111,7 +111,7 @@ venus.name = "venere";
 venus.position.setX(45);
 
 //terra
-const earth = createSphereMesh('/src/texture_plans/earth.jpg','/src/texture_plans/earth_normal_map.jpg', 5,32);
+const earth = createSphereMesh('./src/texture_plans/earth.jpg','./src/texture_plans/earth_normal_map.jpg', 5,32);
 const earthObj = new THREE.Object3D();
 earthObj.add(earth);
 scene.add(earthObj);
@@ -119,7 +119,7 @@ earth.name = "terra";
 earth.position.setX(60);
 
 //marte
-const mars = createSphereMesh('/src/texture_plans/mars.jpg','/src/texture_plans/mars_normal.jpg', 2.66, 32);
+const mars = createSphereMesh('./src/texture_plans/mars.jpg','./src/texture_plans/mars_normal.jpg', 2.66, 32);
 const marsObj = new THREE.Object3D();
 marsObj.add(mars);
 scene.add(marsObj);
