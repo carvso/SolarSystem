@@ -1,15 +1,13 @@
 //per cambiare la rotazione di ogni pianeta aggiungiamo un obj centrale
 //per fare in modo che il pianeta figlio segua la rotazione dell'obj centrale
 
+import './style.css'
 
-// import './style.css'
+import * as THREE from 'three'
+import MouseMeshInteraction from './three_mmi'
 
-import * as THREE from 'https://unpkg.com/three@0.139.0'
-// import MouseMeshInteraction from './three_mmi.js'
-import { OrbitControls } from 'https://unpkg.com/three@0.139.0/examples/jsm/controls/OrbitControls.js';
-
+import {OrbitControls} from 'three/addons/controls/OrbitControls';
 import { TWEEN } from 'https://unpkg.com/three@0.139.0/examples/jsm/libs/tween.module.min.js';
-import {GLTFLoader} from 'https://unpkg.com/three@0.139.0/examples/jsm/loaders/GLTFLoader.js';
  
 var selectedPiece = false;
 var title;
