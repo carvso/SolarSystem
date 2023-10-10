@@ -51,7 +51,7 @@ controls.minDistance = 40;
 controls.maxDistance = 230;
 
 // immagine di bg
-const spaceTexture = new THREE.TextureLoader().load('/src/space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('./src/space.jpg');
 scene.background = spaceTexture
 
 
